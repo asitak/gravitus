@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KW GEN</title>
+	<link rel="stylesheet" href="kwstyle.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>KWGen</h1>
+
+	<div id="inputTable">
+
+		<form>
+			<fieldset>
+				<input type="checkbox" name="fullPlus" id="fullPlus"><span class="check"> BroadMod+</span><br>
+				<input type="checkbox" name="inflate" id="inflate"><span class="check"> Nabaľovať</span>
+			</fieldset>
+		</form>
+
+		<table>
+			<tr>
+				<td class="head">Fix</td>
+				<td><input type="text" class="fix"><button id="fixMore" class="lBut">+</button>
+					<button id="fixLess" class="rBut" disabled>-</button></td>
+			</tr>
+			<tr>
+				<td class="head">Flex</td>
+				<td><input type="text" class="flex"><button id="flexMore" class="lBut">+</button>
+					<button id="flexLess" class="rBut" disabled>-</button></td>
+			</tr>
+		</table>
+		<button id="gen">Generuj...</button>
+		<button id="clean">Vyčisti...</button>
+		<button id="reset">Reset...</button>
+		<button id="copyAll">Skopíruj...</button>
+	</div>
+
+	<div id="result">
+
+		<span class="third">Modifikovaná <button id="copyMod">C</button></span>
+		<span class="third">Frázová <button id="copyPhr">C</button></span>
+		<span class="third">Presná <button id="copyEx">C</button></span><br>
+		<textarea id="modified" disabled></textarea>
+		<textarea id="phrase" disabled></textarea>
+		<textarea id="exact" disabled></textarea>
+		<textarea id="all"></textarea>
+
+		<!-- <table>
+			<tr>
+				<td class="head">Voľná</td>
+				<td><textarea id="modified" class="hidden"></textarea><br></td>
+			</tr>
+			<tr>
+				<td class="head">Frázová</td>
+				<td><textarea id="phrase" class="hidden"></textarea><br></td>
+			</tr>
+			<tr>
+				<td class="head">Presná</td>
+				<td><textarea id="exact" class="hidden"></textarea><br></td>
+			</tr>
+		</table> -->
+	</div>
+
+
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="kwscript.js"></script>
+</body>
+</html>
