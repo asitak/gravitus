@@ -165,7 +165,7 @@ function doMatches() {
 	x.exactArr = [];
 
 	for (let i = 0; i < x.fixFlexArr.length; i++) {
-		let broad = ("+" + x.fixFlexArr[i]).replace(/ /g, " +").replace(/\+\*/g, "");
+		let broad = (x.fixFlexArr[i]).replace(/ /g, " +").replace(/\+\*/g, "");
 		let phrase = "\"" + x.fixFlexArr[i].replace(/\*/g, "") + "\"";
 		let exact = "[" + x.fixFlexArr[i].replace(/\*/g, "") + "]";
 
@@ -218,7 +218,7 @@ function altDoMatches() {
 	x.exactArr = [];
 
 	for (let i = 0; i < x.flexArr.length; i++) {
-		let broad = ("+" + x.flexArr[i]).replace(/ /g, " +").replace(/\+\*/g, "");
+		let broad = (x.flexArr[i]).replace(/ /g, " +").replace(/\+\*/g, "");
 		let phrase = "\"" + x.flexArr[i].replace(/\*/g, "") + "\"";
 		let exact = "[" + x.flexArr[i].replace(/\*/g, "") + "]";
 
