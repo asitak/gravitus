@@ -7,6 +7,20 @@ h1 {
 	text-align: center;
 }
 
+div#words {
+	margin: 30px;
+}
+
+div#flex {
+	margin-top: 25px;
+}
+
+div.half {
+	display: inline-block;
+	width: 30%;
+	margin: 0 30px;
+}
+
 fieldset {
 	text-align-last: left;
 }
@@ -31,13 +45,17 @@ table {
 }
 
 td {
-	padding: 20px;
+	/*padding: 20px;*/
 	text-align: left;
 }
 
-td.head {
-	text-align: right;
-	font-size: 20px;
+/*td.plusTd {
+	text-align: center;
+}*/
+
+th.head {
+	text-align: left;
+	font-size: 25px;
 	font-weight: bold;
 	padding-right: 0;
 }
@@ -46,19 +64,19 @@ input {
 	height: 20px;
 	padding: 10px;
 	font-size: 20px;
-	margin: 5px 0;
+	/*margin: 5px 0;*/
 }
 
 button {
-	padding: 3px;
+	padding: 5px;
 	font-size: 15px;
 	font-weight: bold;
 }
 
-.lBut {
+/*.lBut {
 	margin: 5px 0 5px 10px;
 	width: 20px;
-}
+}*/
 
 .rBut {
 	margin: 5px 5px 5px 0;
@@ -88,6 +106,12 @@ textarea {
 	min-height: 400px;
 	resize: none;
 	/*display: none;*/
+}
+
+textarea.halves {
+	width: 100%;
+	min-height: 150px;
+	font-size: 1.3em;
 }
 
 #all {
